@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ID="26ec8248-9c1d-43af-9295-a8227488a1b0" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>true</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>false</GenerateTaskBasedAsynchronousMethod>
+    <GenerateEventBasedAsynchronousMethods>false</GenerateEventBasedAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://127.0.0.1:8080/teste.asmx" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="teste.disco" MetadataType="Disco" ID="37796b1a-55be-40dd-83dc-af0b2853dd00" SourceId="1" SourceUrl="http://127.0.0.1:8080/teste.asmx?disco" />
+    <MetadataFile FileName="teste.wsdl" MetadataType="Wsdl" ID="39b289a4-38ba-4eb2-9a15-db97da17c335" SourceId="1" SourceUrl="http://127.0.0.1:8080/teste.asmx?wsdl" />
+  </Metadata>
+</ReferenceGroup>
