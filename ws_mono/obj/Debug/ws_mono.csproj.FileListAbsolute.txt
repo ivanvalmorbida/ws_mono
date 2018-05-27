@@ -4,3 +4,11 @@
 /home/ivan/Projects/ws_mono/ws_mono/obj/Debug/ws_mono.dll
 /home/ivan/Projects/ws_mono/ws_mono/obj/Debug/ws_mono.pdb
 /home/ivan/Projects/ws_mono/ws_mono/obj/Debug/ws_mono.csprojResolveAssemblyReference.cache
+/home/ivan/ws_mono/ws_mono/bin/ws_mono.dll
+/home/ivan/ws_mono/ws_mono/bin/ws_mono.pdb
+/home/ivan/ws_mono/ws_mono/obj/Debug/ws_mono.csprojResolveAssemblyReference.cache
+/home/ivan/ws_mono/ws_mono/obj/Debug/ws_mono.csproj.CoreCompileInputs.cache
+/home/ivan/ws_mono/ws_mono/obj/Debug/ws_mono.dll
+/home/ivan/ws_mono/ws_mono/obj/Debug/ws_mono.pdb
+/home/ivan/ws_mono/ws_mono/bin/Newtonsoft.Json.dll
+/home/ivan/ws_mono/ws_mono/bin/Newtonsoft.Json.xml

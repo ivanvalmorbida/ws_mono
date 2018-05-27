@@ -33,12 +33,23 @@
     <Reference Include="System.Data" />
     <Reference Include="System.ServiceModel" />
     <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.11.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Content Include="Global.asax" />
     <Content Include="Web.config" />
     <Content Include="Default.aspx" />
     <Content Include="teste.asmx" />
+    <Content Include="paciente.asmx" />
+    <Content Include="packages.config" />
+    <Content Include="paciente.html" />
+    <Content Include="css\paciente.css" />
+    <Content Include="js\angular.soap.js" />
+    <Content Include="js\mask.js" />
+    <Content Include="js\paciente.js" />
+    <Content Include="js\soapclient.js" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Global.asax.cs">
@@ -56,6 +67,9 @@
     <Compile Include="conexao.cs" />
     <Compile Include="Service References\wserv\Reference.cs">
       <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="paciente.asmx.cs">
+      <DependentUpon>paciente.asmx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
