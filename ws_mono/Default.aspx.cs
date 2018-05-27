@@ -29,8 +29,8 @@ namespace ws_mono
 
         public void button1Clicked(object sender, EventArgs args)
         {
-			ws_mono.paciente ws_pc = new ws_mono.paciente();
-            string strx = ws_pc.getPacienteCPF();
+			//ws_mono.paciente ws_pc = new ws_mono.paciente();
+            //string strx = ws_pc.getPacienteCPF();
 
 			button1.Text = "OK";
 			/*

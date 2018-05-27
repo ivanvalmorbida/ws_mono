@@ -51,8 +51,8 @@ app.directive('uiTelefone', function(){
 app.factory("PacienteService", ['$soap',function($soap){
 	var base_url = "http://127.0.0.1:8080/paciente.asmx"
 
-    var getPacienteCPF = function(){
-            return $soap.post(base_url,"getPacienteCPF")
+    var getPacienteCPF = function(cpf){
+            return $soap.post(base_url,"getPacienteCPF", {strCPF: cpf})
         }
 
     var getEstadoCivil = function(){
@@ -110,7 +110,7 @@ app.controller("PacientesCtrl", function ($scope, $http, PacienteService) {
         })
     }
 
-    PacienteService.getPacienteCPF().then(function(response){
+    PacienteService.getPacienteCPF("07347869994").then(function(response){
         var paci = JSON.parse(response)
 
         if(paci.length!=0){
