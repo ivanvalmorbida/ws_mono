@@ -16,11 +16,11 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/js/bootstrap.min.js"></script>
 
-    <script src="js/soapclient.js"></script>
-    <script src="js/angular.soap.js"></script>    
-    <script src="js/mask.js"></script>    
+    <script src="js/lib/soapclient.js"></script>
+    <script src="js/lib/angular.soap.js"></script>    
+    <script src="js/lib/mask.js"></script>    
 
-    <script src="js/paciente.js"></script>    
+    <script src="js/app/paciente.js"></script>    
 </head>
 <body>
     <div ng-controller="PacientesCtrl">
@@ -46,7 +46,8 @@
 
                         <md-input-container>
                             <label>Data Nasc.</label>
-                            <md-datepicker md-hide-icons="calendar" ng-model="nascimento"></md-datepicker>
+                            <md-datepicker md-hide-icons="calendar" ng-model="nascimento">
+                            </md-datepicker>
                         </md-input-container>                        
                     </div>
                     <div layout-gt-sm="row">
@@ -111,7 +112,8 @@
                         </md-input-container>
                         <md-input-container>
                             <label>Validade Carteirinha</label>
-                            <md-datepicker md-hide-icons="calendar" ng-model="validade_cart"></md-datepicker>
+                            <md-datepicker md-hide-icons="calendar" ng-model="validade_cart">
+                            </md-datepicker>
                         </md-input-container>   
                         <md-input-container flex-gt-sm="" class="md-block">
                             <label>Titular</label>
