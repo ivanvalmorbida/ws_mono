@@ -9,7 +9,7 @@ using Newtonsoft.Json;
 namespace ws_mono
 {
 
-	[WebService(Namespace = "http://www.example.org/", Description = "Example web service in C#")]
+	[WebService(Namespace = "http://www.example.org/")]
     [WebServiceBinding(ConformsTo = WsiProfiles.BasicProfile1_1)]
 	public class paciente : System.Web.Services.WebService
     {

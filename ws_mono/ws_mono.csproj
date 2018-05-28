@@ -47,7 +47,6 @@
     <Content Include="Global.asax" />
     <Content Include="Web.config" />
     <Content Include="Default.aspx" />
-    <Content Include="teste.asmx" />
     <Content Include="paciente.asmx" />
     <Content Include="packages.config" />
     <Content Include="paciente.html" />
@@ -76,9 +75,6 @@
     </Compile>
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="teste.asmx.cs">
-      <DependentUpon>teste.asmx</DependentUpon>
     </Compile>
     <Compile Include="conexao.cs" />
     <Compile Include="Service References\wserv\Reference.cs">
