@@ -2,8 +2,7 @@
   <MonoDevelop.Ide.ItemProperties.ws__mono PreferredExecutionTarget="firefox" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Status do ws_mono">
     <Files>
-      <File FileName="ws_mono/paciente.asmx" Line="1" Column="1" />
-      <File FileName="ws_mono/paciente.asmx.cs" Line="20" Column="54" />
+      <File FileName="ws_mono/paciente.html" Line="67" Column="46" />
       <File FileName="Status do ws_mono" />
     </Files>
   </MonoDevelop.Ide.Workbench>

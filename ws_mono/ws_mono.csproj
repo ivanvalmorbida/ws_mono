@@ -42,6 +42,9 @@
     <Reference Include="Newtonsoft.Json">
       <HintPath>..\packages\Newtonsoft.Json.11.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.11.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Content Include="Global.asax" />
@@ -50,21 +53,21 @@
     <Content Include="paciente.asmx" />
     <Content Include="packages.config" />
     <Content Include="paciente.html" />
-    <Content Include="js\app\paciente.js" />
-    <Content Include="js\lib\angular.soap.js" />
-    <Content Include="js\lib\mask.js" />
-    <Content Include="js\lib\soapclient.js" />
     <Content Include="css\app\paciente.css" />
     <Content Include="css\lib\angular-material.min.css" />
     <Content Include="css\lib\bootstrap.css" />
-    <Content Include="js\lib\angular.min.js" />
+    <Content Include="js\app\paciente.js" />
     <Content Include="js\lib\angular-animate.min.js" />
     <Content Include="js\lib\angular-aria.min.js" />
     <Content Include="js\lib\angular-material.min.js" />
     <Content Include="js\lib\angular-messages.min.js" />
+    <Content Include="js\lib\angular.min.js" />
+    <Content Include="js\lib\angular.soap.js" />
     <Content Include="js\lib\bootstrap.min.js" />
     <Content Include="js\lib\jquery.min.js" />
+    <Content Include="js\lib\mask.js" />
     <Content Include="js\lib\moment.min.js" />
+    <Content Include="js\lib\soapclient.js" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Global.asax.cs">
@@ -99,10 +102,7 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="js\app\" />
-    <Folder Include="js\lib\" />
-    <Folder Include="css\lib\" />
-    <Folder Include="css\app\" />
+    <Folder Include="js\" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ProjectExtensions>
