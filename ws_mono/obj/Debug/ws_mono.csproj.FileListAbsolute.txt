@@ -11,3 +11,4 @@
 /home/ivan/ws_mono/ws_mono/obj/Debug/ws_mono.csproj.CoreCompileInputs.cache
 /home/ivan/ws_mono/ws_mono/obj/Debug/ws_mono.dll
 /home/ivan/ws_mono/ws_mono/obj/Debug/ws_mono.pdb
+/home/ivan/ws_mono/ws_mono/obj/Debug/ws_mono.csprojResolveAssemblyReference.cache
