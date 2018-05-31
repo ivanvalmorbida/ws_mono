@@ -56,10 +56,8 @@
     <Content Include="paciente.asmx" />
     <Content Include="packages.config" />
     <Content Include="paciente.html" />
-    <Content Include="css\app\paciente.css" />
     <Content Include="css\lib\angular-material.min.css" />
     <Content Include="css\lib\bootstrap.css" />
-    <Content Include="js\app\paciente.js" />
     <Content Include="js\lib\angular-animate.min.js" />
     <Content Include="js\lib\angular-aria.min.js" />
     <Content Include="js\lib\angular-material.min.js" />
@@ -73,8 +71,11 @@
     <Content Include="js\lib\soapclient.js" />
     <Content Include="cirurgia.asmx" />
     <Content Include="cirurgia.html" />
-    <Content Include="js\app\cirurgia.js" />
-    <Content Include="css\app\cirurgia.css" />
+    <Content Include="js\cirurgia.js" />
+    <Content Include="js\paciente.js" />
+    <Content Include="css\paciente.css" />
+    <Content Include="css\cirurgia.css" />
+    <Content Include="img\seta-direita.svg" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Global.asax.cs">
@@ -113,6 +114,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="js\" />
+    <Folder Include="img\" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ProjectExtensions>
