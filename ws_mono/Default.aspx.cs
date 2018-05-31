@@ -29,11 +29,11 @@ namespace ws_mono
 
         public void button1Clicked(object sender, EventArgs args)
         {
-			//ws_mono.paciente ws_pc = new ws_mono.paciente();
-            //string strx = ws_pc.getPacienteCPF();
-
 			button1.Text = "OK";
-			/*
+
+			/*ws_mono.paciente ws_pc = new ws_mono.paciente();
+            string strx = ws_pc.getPacienteCPF();
+            
 			Conexao cn = new Conexao();
             SqlParameter sqlPar = new SqlParameter();
             ArrayList colPar = new ArrayList();
