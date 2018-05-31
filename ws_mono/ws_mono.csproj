@@ -36,6 +36,18 @@
     <Reference Include="Newtonsoft.Json">
       <HintPath>..\packages\Newtonsoft.Json.11.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.11.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.11.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.11.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.11.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Content Include="Global.asax" />
@@ -59,6 +71,10 @@
     <Content Include="js\lib\mask.js" />
     <Content Include="js\lib\moment.min.js" />
     <Content Include="js\lib\soapclient.js" />
+    <Content Include="cirurgia.asmx" />
+    <Content Include="cirurgia.html" />
+    <Content Include="js\app\cirurgia.js" />
+    <Content Include="css\app\cirurgia.css" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Global.asax.cs">
@@ -76,6 +92,9 @@
     </Compile>
     <Compile Include="paciente.asmx.cs">
       <DependentUpon>paciente.asmx</DependentUpon>
+    </Compile>
+    <Compile Include="cirurgia.asmx.cs">
+      <DependentUpon>cirurgia.asmx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

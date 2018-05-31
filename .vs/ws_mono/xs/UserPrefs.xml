@@ -2,8 +2,10 @@
   <MonoDevelop.Ide.ItemProperties.ws__mono PreferredExecutionTarget="chromium-browser" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Status do ws_mono">
     <Files>
-      <File FileName="ws_mono/paciente.html" Line="17" Column="52" />
-      <File FileName="ws_mono/css/app/paciente.css" Line="4" Column="1" />
+      <File FileName="ws_mono/cirurgia.asmx" Line="1" Column="1" />
+      <File FileName="ws_mono/cirurgia.asmx.cs" Line="1" Column="1" />
+      <File FileName="ws_mono/cirurgia.html" Line="11" Column="1" />
+      <File FileName="ws_mono/css/app/cirurgia.css" Line="1" Column="1" />
       <File FileName="Status do ws_mono" />
     </Files>
   </MonoDevelop.Ide.Workbench>
