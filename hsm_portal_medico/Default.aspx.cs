@@ -18,7 +18,7 @@ namespace ws_mono
 
         public void button1Clicked(object sender, EventArgs args)
         {
-			button1.Text = "OK";
+			button1.Text = User.Identity.Name.ToString();
 
 			/*ws_mono.paciente ws_pc = new ws_mono.paciente();
             string strx = ws_pc.getPacienteCPF();
