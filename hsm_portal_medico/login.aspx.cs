@@ -37,7 +37,7 @@ namespace ws_mono
         {
 			string strAUX = "";
             int c = 0;
-            int I = 0;
+            int I = -1;
             int l = 0;
 			int x = 0;
 
@@ -45,10 +45,10 @@ namespace ws_mono
 			for (I = 1; I <= Password.Length; I++)
             {
 				x = I % l;
-				if (x == 0) x = -1; else x = 0;	
+				if (x == 0) x = -1; else x = 0;
 
-				c = Convert.ToInt32(Convert.ToChar(Key.Substring((I % l) - l * x, 1)));
-				strAUX += Convert.ToChar((Convert.ToInt32(Convert.ToChar(Password.Substring(I, 1))) ^ c));
+				c = Convert.ToInt32(Convert.ToChar(Key.Substring(((I % l) - l * x)-1, 1)));
+				strAUX += Convert.ToChar(Convert.ToInt32(Convert.ToChar(Password.Substring(I-1, 1))) ^ c);
             }
             return strAUX;
         }
