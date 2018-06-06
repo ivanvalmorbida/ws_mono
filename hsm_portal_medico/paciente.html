@@ -32,10 +32,12 @@
             </md-card-title>
             <md-card-content>
                 <md-content>
+                    <br>
+                    <br>
                     <div layout-gt-sm="row">
                         <md-input-container flex-gt-sm="" class="md-block">
                             <label>CPF</label>
-                            <input ng-model="cpf" ui-mask="999.999.999-99"/>
+                            <input ng-model="cpf" ui-mask="999.999.999-99" ng-change='BuscarCPF()'/>
                         </md-input-container>
 
                         <md-input-container flex-gt-sm="" class="md-block">

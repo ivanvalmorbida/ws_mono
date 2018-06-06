@@ -13,11 +13,13 @@ namespace ws_mono {
 	
 	public partial class login {
 		
-		protected System.Web.UI.HtmlControls.HtmlForm form1;
+		protected System.Web.UI.HtmlControls.HtmlForm frmLogin;
 		
 		protected System.Web.UI.WebControls.TextBox txtUsuario;
 		
 		protected System.Web.UI.WebControls.TextBox txtSenha;
+		
+		protected System.Web.UI.WebControls.Label lblMensagem;
 		
 		protected System.Web.UI.WebControls.Button btnOk;
 	}

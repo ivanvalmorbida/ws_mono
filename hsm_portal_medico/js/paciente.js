@@ -110,34 +110,40 @@ app.controller("PacientesCtrl", function ($scope, $http, PacienteService) {
         })
     }
 
-    PacienteService.getPacienteCPF("07347869994").then(function(response){
-        var paci = JSON.parse(response)
+    $scope.BuscarCPF = function() {
+        var cpf = $scope.cpf.replace('.','').replace('-','')
+        if (cpf.length == 11)
+        {
+            PacienteService.getPacienteCPF(cpf).then(function(response){
+                var paci = JSON.parse(response)
 
-        if(paci.length!=0){
-            var paci = paci[0]
+                if(paci.length!=0){
+                    var paci = paci[0]
 
-            $scope.cpf = paci.CNPJCPF
-            $scope.nome = paci.NOME
-            $scope.nascimento = new Date(paci.DATA_NASCIM)
-            $scope.sexo = paci.SEXO
-            $scope.rg = paci.RG
-            $scope.estadocivil = paci.EST_CIVIL
-            $scope.profissao = paci.PROFISSAO
-            $scope.pai = paci.NOMEPAI
-            $scope.mae = paci.NOMEMAE
-            $scope.convenio = paci.CONVENIO
-            $scope.plano = paci.CONVENIO_PLANO
-            $scope.carteirinha = paci.NRCONVENIO
-            $scope.titular = paci.TITULAR
-            $scope.validade_cart = new Date(paci.CONVENIO_VALIDADE_CARTEIRA)
-            $scope.cep = paci.CEP
-            $scope.bairro = paci.BAIRRO
-            $scope.celular = paci.Celular
-            $scope.telefone = paci.FONERESID.substring(1,12).replace(' ','')
-            $scope.email = paci.EMAIL
+                    $scope.cpf = paci.CNPJCPF
+                    $scope.nome = paci.NOME
+                    $scope.nascimento = new Date(paci.DATA_NASCIM)
+                    $scope.sexo = paci.SEXO
+                    $scope.rg = paci.RG
+                    $scope.estadocivil = paci.EST_CIVIL
+                    $scope.profissao = paci.PROFISSAO
+                    $scope.pai = paci.NOMEPAI
+                    $scope.mae = paci.NOMEMAE
+                    $scope.convenio = paci.CONVENIO
+                    $scope.plano = paci.CONVENIO_PLANO
+                    $scope.carteirinha = paci.NRCONVENIO
+                    $scope.titular = paci.TITULAR
+                    $scope.validade_cart = new Date(paci.CONVENIO_VALIDADE_CARTEIRA)
+                    $scope.cep = paci.CEP
+                    $scope.bairro = paci.BAIRRO
+                    $scope.celular = paci.Celular
+                    $scope.telefone = paci.FONERESID.substring(1,12).replace(' ','')
+                    $scope.email = paci.EMAIL
 
-            $scope.BuscarCEP()
+                    $scope.BuscarCEP()
+                }
+            })
         }
-    })
+    }
 })
 
