@@ -108,10 +108,29 @@ app.controller("PacientesCtrl", function ($scope, $http, PacienteService) {
             $scope.cidade = cep.Cidade
             $scope.uf = cep.UF
         })
-    }
+    }        
 
     $scope.BuscarCPF = function() {
-        var cpf = $scope.cpf.replace('.','').replace('-','')
+        if ($scope.cpf!=undefined) {cpf = $scope.cpf.replace('.','').replace('-','')} else {cpf=''}
+        $scope.codigo = 0
+        $scope.nome = ''
+        $scope.nascimento = null
+        $scope.sexo = null
+        $scope.rg = ''
+        $scope.estadocivil = null
+        $scope.profissao = null
+        $scope.pai = ''
+        $scope.mae = ''
+        $scope.convenio = null
+        $scope.plano = ''
+        $scope.carteirinha = ''
+        $scope.titular = ''
+        $scope.validade_cart = null
+        $scope.cep = ''
+        $scope.bairro = ''
+        $scope.celular = ''
+        $scope.telefone = ''
+        $scope.email = ''
         if (cpf.length == 11)
         {
             PacienteService.getPacienteCPF(cpf).then(function(response){
@@ -120,7 +139,7 @@ app.controller("PacientesCtrl", function ($scope, $http, PacienteService) {
                 if(paci.length!=0){
                     var paci = paci[0]
 
-                    $scope.cpf = paci.CNPJCPF
+                    $scope.codigo = paci.CODIGO
                     $scope.nome = paci.NOME
                     $scope.nascimento = new Date(paci.DATA_NASCIM)
                     $scope.sexo = paci.SEXO
