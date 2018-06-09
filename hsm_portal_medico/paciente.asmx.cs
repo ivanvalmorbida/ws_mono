@@ -13,10 +13,9 @@ namespace ws_mono
 	public class paciente : System.Web.Services.WebService
     {
 		[WebMethod]
-		public string setPacienteCPF(oPaciente objPac)
+		public string setPacienteCPF(object objPac)
 		{
-                          
-			/*Conexao cn = new Conexao();
+            /*Conexao cn = new Conexao();
             SqlParameter sqlPar = new SqlParameter();
             ArrayList colPar = new ArrayList();
             StringBuilder strSQL = new StringBuilder();
@@ -46,8 +45,8 @@ namespace ws_mono
             objPes.Celular = $scope.celular
             objPes.FONERESID = $scope.telefone
             objPes.EMAIL = $scope.email*/
-			
-			return "Ok";
+
+            return "Ok";
 		}
 
 		[WebMethod]

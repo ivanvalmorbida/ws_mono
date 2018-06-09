@@ -52,7 +52,7 @@ app.factory("PacienteService", ['$soap',function($soap){
 	var base_url = "http://localhost:8080/paciente.asmx"
     
     var setPacienteCPF = function(obj){
-            return $soap.post(base_url,"setPacienteCPF", {objPes: obj})
+            return $soap.post(base_url,"setPacienteCPF", {objPac: obj})
         }
     
     var getPacienteCPF = function(cpf){
@@ -91,12 +91,11 @@ app.factory("PacienteService", ['$soap',function($soap){
 }])
 
 app.controller("PacientesCtrl", function ($scope, $http, PacienteService) {
-    var obj = {
-    codigo: 1,
-    cpf: '1234'
-    }
-    /*paci.NOME = $scope.nome
-    paci.DATA_NASCIM = $scope.nascimento
+    var paci = []
+
+    paci.nome = $scope.nome
+
+    /*paci.DATA_NASCIM = $scope.nascimento
     paci.SEXO = $scope.sexo
     paci.RG = $scope.rg
     paci.EST_CIVIL = $scope.estadocivil
@@ -114,7 +113,7 @@ app.controller("PacientesCtrl", function ($scope, $http, PacienteService) {
     paci.FONERESID = $scope.telefone
     paci.EMAIL = $scope.email*/
 
-    PacienteService.setPacienteCPF(obj).then(function(response){
+    PacienteService.setPacienteCPF({nome: 'ivan', codigo: 1}).then(function(response){
         //$scope.est_civ = JSON.parse(response)
     })
 
