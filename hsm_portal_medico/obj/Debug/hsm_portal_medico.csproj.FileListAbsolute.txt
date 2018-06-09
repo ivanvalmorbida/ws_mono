@@ -1,0 +1,10 @@
+C:\Local Projects\ws_mono\hsm_portal_medico\bin\ws_mono.dll.config
+C:\Local Projects\ws_mono\hsm_portal_medico\bin\ws_mono.dll
+C:\Local Projects\ws_mono\hsm_portal_medico\bin\ws_mono.pdb
+C:\Local Projects\ws_mono\hsm_portal_medico\bin\Newtonsoft.Json.dll
+C:\Local Projects\ws_mono\hsm_portal_medico\bin\Newtonsoft.Json.xml
+C:\Local Projects\ws_mono\hsm_portal_medico\obj\Debug\hsm_portal_medico.csproj.CoreCompileInputs.cache
+C:\Local Projects\ws_mono\hsm_portal_medico\obj\Debug\hsm_portal_medico.csproj.CopyComplete
+C:\Local Projects\ws_mono\hsm_portal_medico\obj\Debug\ws_mono.dll
+C:\Local Projects\ws_mono\hsm_portal_medico\obj\Debug\ws_mono.pdb
+C:\Local Projects\ws_mono\hsm_portal_medico\obj\Debug\hsm_portal_medico.csprojAssemblyReference.cache

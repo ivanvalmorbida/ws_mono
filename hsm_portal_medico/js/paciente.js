@@ -49,7 +49,7 @@ app.directive('uiTelefone', function(){
 })
 
 app.factory("PacienteService", ['$soap',function($soap){
-	var base_url = "http://127.0.0.1:8080/paciente.asmx"
+	var base_url = "http://localhost:8080/paciente.asmx"
     
     var setPacienteCPF = function(obj){
             return $soap.post(base_url,"setPacienteCPF", {objPes: obj})

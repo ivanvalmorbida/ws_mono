@@ -1,6 +1,6 @@
 ﻿angular.module('CirurgiasApp', ['ngMaterial','angularSoap'])
 .factory("CirurgiaService", ['$soap',function($soap){
-    var base_url = "http://127.0.0.1:8080/cirurgia.asmx"
+    var base_url = "http://localhost:8080/cirurgia.asmx"
 
     var getCirurgiaCod = function(cod){
             return $soap.post(base_url,"getCirurgiaCod", {strCod: cod})

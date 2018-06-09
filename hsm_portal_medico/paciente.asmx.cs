@@ -16,7 +16,7 @@ namespace ws_mono
 		public string setPacienteCPF(oPaciente objPac)
 		{
                           
-			Conexao cn = new Conexao();
+			/*Conexao cn = new Conexao();
             SqlParameter sqlPar = new SqlParameter();
             ArrayList colPar = new ArrayList();
             StringBuilder strSQL = new StringBuilder();
@@ -26,7 +26,7 @@ namespace ws_mono
             sqlPar.ParameterName = "@CPF";
             colPar.Add(sqlPar);
 
-			/*objPes.CODIGO;
+			objPes.CODIGO;
             = $scope.cpf
             objPes.NOME = $scope.nome
             objPes.DATA_NASCIM = $scope.nascimento

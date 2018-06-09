@@ -6,7 +6,7 @@ using System.Collections;
 public sealed class Conexao
 {
     private SqlConnection DBCon = new SqlConnection();
-	private string strConection = "Server=localhost;Database=hsm;User ID=SA;Password=;Trusted_Connection=False;Connection Timeout=30;Pooling=False;";
+	private string strConection = "Server=localhost;Database=hsm3;User ID=SA;Password=CTInfo&Kleros4002;Trusted_Connection=False;Connection Timeout=30;Pooling=False;";
     private string _MSG;
 
     public string MSG
