@@ -2,7 +2,7 @@
 using System.Data;
 using System.Data.SqlClient;
 using System.Collections;
-
+//
 public sealed class Conexao
 {
     private SqlConnection DBCon = new SqlConnection();
