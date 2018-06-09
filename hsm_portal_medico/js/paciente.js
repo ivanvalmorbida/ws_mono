@@ -50,7 +50,11 @@ app.directive('uiTelefone', function(){
 
 app.factory("PacienteService", ['$soap',function($soap){
 	var base_url = "http://127.0.0.1:8080/paciente.asmx"
-
+    
+    var setPacienteCPF = function(obj){
+            return $soap.post(base_url,"setPacienteCPF", {objPes: obj})
+        }
+    
     var getPacienteCPF = function(cpf){
             return $soap.post(base_url,"getPacienteCPF", {strCPF: cpf})
         }
@@ -76,6 +80,7 @@ app.factory("PacienteService", ['$soap',function($soap){
         }
 
 	return {
+        setPacienteCPF:setPacienteCPF,
         getPacienteCPF:getPacienteCPF,
         getEstadoCivil: getEstadoCivil,
         getProfissoes: getProfissoes,
@@ -86,6 +91,33 @@ app.factory("PacienteService", ['$soap',function($soap){
 }])
 
 app.controller("PacientesCtrl", function ($scope, $http, PacienteService) {
+    var obj = {
+    codigo: 1,
+    cpf: '1234'
+    }
+    /*paci.NOME = $scope.nome
+    paci.DATA_NASCIM = $scope.nascimento
+    paci.SEXO = $scope.sexo
+    paci.RG = $scope.rg
+    paci.EST_CIVIL = $scope.estadocivil
+    paci.PROFISSAO = $scope.profissao
+    paci.NOMEPAI = $scope.pai
+    paci.NOMEMAE = $scope.mae
+    paci.CONVENIO = $scope.convenio
+    paci.CONVENIO_PLANO = $scope.plano
+    paci.NRCONVENIO = $scope.carteirinha
+    paci.TITULAR = $scope.titular
+    paci.CONVENIO_VALIDADE_CARTEIRA = $scope.validade_cart
+    paci.CEP = $scope.cep
+    paci.BAIRRO = $scope.bairro
+    paci.Celular = $scope.celular
+    paci.FONERESID = $scope.telefone
+    paci.EMAIL = $scope.email*/
+
+    PacienteService.setPacienteCPF(obj).then(function(response){
+        //$scope.est_civ = JSON.parse(response)
+    })
+
     PacienteService.getEstadoCivil().then(function(response){
         $scope.est_civ = JSON.parse(response)
     })
